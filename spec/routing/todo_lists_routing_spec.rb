@@ -12,11 +12,11 @@ describe TodoListsController do
     end
 
     it "routes to #show" do
-      get("/todo_lists/1").should route_to("todo_lists#show", :id => "1")
+      get("/todo_lists/4").should route_to("todo_lists#show", :id => "4")
     end
 
     it "routes to #edit" do
-      get("/todo_lists/1/edit").should route_to("todo_lists#edit", :id => "1")
+      get("/todo_lists/4/edit").should route_to("todo_lists#edit", :id => "4")
     end
 
     it "routes to #create" do
@@ -24,11 +24,11 @@ describe TodoListsController do
     end
 
     it "routes to #update" do
-      put("/todo_lists/1").should route_to("todo_lists#update", :id => "1")
+      put("/todo_lists/4").should route_to("todo_lists#update", :id => "4")
     end
 
     it "routes to #destroy" do
-      delete("/todo_lists/1").should route_to("todo_lists#destroy", :id => "1")
+      delete("/todo_lists/4").should route_to("todo_lists#destroy", :id => "4")
     end
 
   end
